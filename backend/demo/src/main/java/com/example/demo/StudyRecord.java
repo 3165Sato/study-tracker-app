@@ -21,7 +21,7 @@ public class StudyRecord {
     private String title;
 
     @Column()
-    private String studyTime;
+    private Integer studyTime;
 
     @Column()
     private String category;
@@ -45,11 +45,11 @@ public class StudyRecord {
         this.title = title;
     }
 
-    public void setStudyTime(String studyTime) {
+    public void setStudyTime(Integer studyTime) {
         this.studyTime = studyTime;
     }
 
-        public String getStudyTime() {
+        public Integer getStudyTime() {
         return studyTime;
     }
 

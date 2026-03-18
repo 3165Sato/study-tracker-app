@@ -14,7 +14,9 @@ import com.example.demo.api.dto.StudyRecordRequestDto;
 import com.example.demo.api.dto.StudyRecordResponseDto;
 import com.example.demo.api.service.StudyRecordService;
 import com.example.demo.repositories.StudyRecordRepository;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/api")
 public class StudyRecordController {
